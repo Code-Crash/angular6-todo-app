@@ -1,0 +1,17 @@
+<ul class="todos">
+  <li *ngFor="let todo of todos; let i = index">
+    <div class="card" [ngClass]="{'completed' : todo.completed}">
+      <div class="card-body">
+        <div class=" card-title title">
+          <span>{{todo.title}}</span>
+          <span (click)="goToEdit(todo)"><i class="fas fa-edit"></i></span>
+          <span (click)="toDelete(todo)"><i class="fas fa-trash red"></i></span>
+          <span (click)="markComplete(todo)" *ngIf="!todo.completed"><i class="fas fa-check"></i></span>
+          <span (click)="markUnComplete(todo)" *ngIf="todo.completed"><i class="fas fa-times" [ngClass]="{'red': todo.completed}"></i></span>
+        </div>
+        <div class="card-body text"> {{todo.description}} </div>
+      </div>
+    </div>
+  </li>
+  <li *ngIf="todos.length === 0"> No Todos Stored yet!</li>
+</ul>

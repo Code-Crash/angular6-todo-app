@@ -1,0 +1,9 @@
+<div class="card ">
+  <div class="card-body">
+    <div class="card-body edit-todo-area">
+      <div><input type="text" placeholder="Enter Title" [(ngModel)]="todo.title"></div>
+      <div><textarea name="" id="" cols="30" rows="10" placeholder="Enter Description" [(ngModel)]="todo.description"></textarea></div>
+      <div><button class="btn btn-success" (click)="editTodo(todo)">Edit</button></div>
+    </div>
+  </div>
+</div>

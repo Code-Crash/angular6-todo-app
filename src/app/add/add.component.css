@@ -1,0 +1,15 @@
+:host {
+  display: block!important;
+  width: 100%;
+}
+
+.add-todo-area {
+  /* padding: 1px; */
+}
+
+.add-todo-area button,
+.add-todo-area input,
+.add-todo-area textarea {
+  width: 100%;
+  margin: 10px 0;
+}

@@ -1,0 +1,15 @@
+.full-width {
+  width: 100%;
+}
+
+.p20 {
+  padding: 20px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+#header i {
+  margin-right: 12px;
+}
